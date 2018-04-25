@@ -139,6 +139,7 @@ class AcpManager {
     private synchronized void showRationalDialog(final String[] permissions) {
         new AlertDialog.Builder(mActivity)
                 .setMessage(mOptions.getRationalMessage())
+                .setCancelable(false)
                 .setPositiveButton(mOptions.getRationalBtnText(), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
